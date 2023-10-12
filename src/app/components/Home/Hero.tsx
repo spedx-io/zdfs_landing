@@ -1,8 +1,4 @@
-// import ArrowRight from "@/components/icons/ArrowRight";
-import Image from "next/image";
-// import Offers from "./Offers";
 import { Header } from "./Header";
-import Link from "next/link";
 export const Hero: React.FC = () => {
   return (
     <div className="bg-auto flex flex-col min-h-screen w-screen overflow-x-hidden relative">
@@ -20,16 +16,18 @@ export const Hero: React.FC = () => {
                   style={{
                     background:
                       "linear-gradient(180deg, #CFA8FF 50%, #091931 125.69%)",
-                      WebkitBackgroundClip: "text",
-                      WebkitTextFillColor: "transparent",
+                    WebkitBackgroundClip: "text",
+                    WebkitTextFillColor: "transparent",
                   }}
                 >
                   on Solana
                 </span>
               </p>
               <div className="opacity-60 text-center text-gray-100 text-xl font-normal font-['Satoshi Variable']">
-                Speculate on your favorite ethereum shitcoins leveraging HXRO
-                Network's derivatives infrastructure.
+                <p>
+                  Speculate on your favorite ethereum shitcoins leveraging HXRO
+                  Network&apos;s derivatives infrastructure.
+                </p>
               </div>
             </div>
             <div className="flex flex-col items-center justify-center ">
