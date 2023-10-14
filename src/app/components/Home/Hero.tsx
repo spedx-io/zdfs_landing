@@ -31,7 +31,8 @@ export const Hero: React.FC = () => {
               </div>
             </div>
             <div className="flex flex-col items-center justify-center ">
-              <button
+              <a
+                href="https://alpha.spedx.exchange/trade"
                 className="z-[10] w-40 h-16 bg-[#ded5fa] rounded select-none
     hover:translate-y-2 hover:translate-x-1 hover:[box-shadow:0_0_0_0_#ffffff,0_0_0_0_#ffffff]
     hover:border-b-[0px] 
@@ -41,7 +42,7 @@ export const Hero: React.FC = () => {
                 <span className="flex flex-col justify-center items-center h-full text-black font-normal text-lg">
                   Launch App
                 </span>
-              </button>
+              </a>
             </div>
           </div>
         </div>
