@@ -5,9 +5,9 @@ import Image from "next/image";
 export const Footer: React.FC = () => {
   return (
     <footer className="flex flex-col items-center justify-center w-full">
-                <hr className="w-[1150px] mx-auto my-[60px] opacity-30 " />
+                <hr className="w-full mx-auto my-[60px] opacity-30 " />
 
-      <div className="max-w-[1200px] w-full flex items-center justify-between text-white pb-20">
+      <div className="max-w-[1200px] w-full flex md:flex-row flex-col gap-y-4 items-center justify-between text-white pb-20">
         <div id="about" className="max-w-[340px] w-full">
           <Image src="/logo.svg" alt="spedx logo" width={168} height={44} />{" "}
           <p className="mt-5 mb-10 leading-149@%] text-[21px]">
@@ -65,7 +65,7 @@ export const Footer: React.FC = () => {
             </Link>
           </div>
         </div>
-        <div id="links" className="grid grid-cols-3">
+        <div id="links" className="flex flex-row  gap-x-5">
           <div className="gap-y-3 flex flex-col">
             <p className="text-2xl">Get Started</p>
             <Link href="/" className="opacity-50 text-sm">
