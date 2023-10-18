@@ -8,11 +8,11 @@ export const Hero: React.FC = () => {
           <div className="flex flex-col gap-y-10">
             <div className=" flex flex-col gap-y-10">
               <p className="flex flex-col gap-y-5 justify-between items-center bg-[url('/images/backgrounds/Particles.svg')] bg-no-repeat">
-                <span className="text-gray-100 text-7xl font-medium font-['Red Hat Display']">
+                <span className="flex justify-between items-center text-center text-gray-100 md:text-7xl text-5xl font-medium font-['Red Hat Display']">
                   Trade your favorite altcoins
                 </span>
                 <span
-                  className="text-7xl font-medium font-['Red Hat Display']"
+                  className="md:text-7xl text-5xl font-medium font-['Red Hat Display']"
                   style={{
                     background:
                       "linear-gradient(180deg, #CFA8FF 50%, #091931 125.69%)",

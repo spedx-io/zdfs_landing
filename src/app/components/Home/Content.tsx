@@ -73,14 +73,14 @@ export const Content: React.FC = () => {
   ];
 
   return (
-    <div className="flex flex-col items-center justify-center">
-      <div className="text-xl text-white bg-[url('/images/backgrounds/Subtract.svg')] bg-[center_top_-13rem] bg-opacity-10 bg-no-repeat">
+    <div className="w-full flex flex-col items-center justify-center">
+      <div className="w-full flex text-xl text-center justify-center text-white lg:bg-[url('/images/backgrounds/Subtract.svg')] bg-none bg-[center_top_-13rem] bg-opacity-10 bg-no-repeat">
         <Image
           src="/trading_view.svg"
           width={97}
           height={97}
           alt="trading view image"
-          className="w-full h-full"
+          className="md:w-full md:h-full w-[60%] h-[60%]"
         />
       </div>
       <div className="w-full flex flex-col gap-y-[50px]">
@@ -88,7 +88,7 @@ export const Content: React.FC = () => {
           <div className="w-full flex flex-col gap-y-[70px] bg-[url('/images/backgrounds/ZDFs_bg.svg')] bg-no-repeat bg-top">
             <div className="w-full h-24 flex-col justify-center items-center inline-flex ">
               <div className="flex flex-row gap-x-4  ">
-                <span className="text-white text-[46px] font-semibold font-['Satoshi Variable']">
+                <span className="text-white md:text-[46px] text-2xl font-semibold font-['Satoshi Variable']">
                   Introducing
                 </span>
                 <span
@@ -108,7 +108,7 @@ export const Content: React.FC = () => {
               </div>
             </div>
             <div className="flex flex-col gap-y-7">
-              <div className="flex flex-row gap-x-7 justify-center items-center">
+              <div className="flex flex-col gap-y-7 md:flex-row gap-x-7 justify-center items-center">
                 {ZDFsDetails.slice(0, 2).map((ZDFsDetails) => (
                   <div
                     key={ZDFsDetails.heading}
@@ -124,7 +124,7 @@ export const Content: React.FC = () => {
                   </div>
                 ))}
               </div>
-              <div className="flex flex-row gap-x-7 justify-center items-center">
+              <div className="flex flex-col gap-y-7 md:flex-row gap-x-7 justify-center items-center">
                 {ZDFsDetails.slice(2).map((ZDFsDetails) => (
                   <div
                     key={ZDFsDetails.heading}
@@ -143,11 +143,11 @@ export const Content: React.FC = () => {
             </div>
           </div>
         </div>
-        <div className="w-full flex flex-col gap-y-[-100px]">
+        <div className="w-full flex flex-col gap-y-[-100px] justify-center items-center">
           <div className="w-full h-[400px] flex-col justify-center items-center inline-flex bg-[url('/images/backgrounds/Candlesticks.svg')] bg-no-repeat bg-center">
             <div className="flex flex-row gap-x-4">
               <span
-                className="text-[46px] font-bold font-['Satoshi Variable']"
+                className="md:text-[46px] text-2xl font-bold font-['Satoshi Variable']"
                 style={{
                   background:
                     "linear-gradient(180deg, #CFA8FF 50%, #091931 125.69%)",
@@ -157,7 +157,7 @@ export const Content: React.FC = () => {
               >
                 Perpetuals <span className="text-white">,</span>
               </span>
-              <span className="text-white text-[46px] font-semibold font-['Satoshi Variable']">
+              <span className="text-white md:text-[46px] text-2xl text-center font-semibold font-['Satoshi Variable']">
                 on steroids.
               </span>
             </div>
@@ -165,8 +165,8 @@ export const Content: React.FC = () => {
               Get perpetuals-like trading experience, with advanced capabilities
             </div>
           </div>
-          <div className="flex flex-col gap-y-7">
-            <div className="flex flex-row gap-x-7 justify-center items-start">
+          <div className="flex flex-col gap-7 items-center justify-center ">
+            <div className="flex flex-col gap-y-7 md:flex-row gap-x-7 justify-center items-start">
               {PerpetualsDetails.slice(0, 2).map((PerpetualsDetails) => (
                 <div
                   key={PerpetualsDetails.heading}
@@ -182,7 +182,7 @@ export const Content: React.FC = () => {
                 </div>
               ))}
             </div>
-            <div className="flex flex-row gap-x-7 justify-center items-start">
+            <div className="flex flex-col gap-y-7 md:flex-row gap-x-7 justify-center items-start">
               {PerpetualsDetails.slice(2).map((PerpetualsDetails) => (
                 <div
                   key={PerpetualsDetails.heading}
@@ -200,10 +200,10 @@ export const Content: React.FC = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col gap-y-[70px] bg-[url('/images/backgrounds/Risks_bg.svg')] bg-no-repeat bg-top">
+        <div className="flex flex-col gap-y-[70px] justify-center items-center bg-[url('/images/backgrounds/Risks_bg.svg')] bg-no-repeat bg-top">
           <div className="w-full h-[300px] flex-col justify-center items-center inline-flex">
             <div className="flex flex-col items-center gap-x-4">
-              <span className="text-white text-[46px] font-bold font-['Satoshi Variable']">
+              <span className="text-white md:text-[46px] text-2xl font-bold font-['Satoshi Variable']">
                 You manage your <span className="text-red-400"  style={{
                   background:
                     " linear-gradient(98deg, #FF5D5D 59.88%, #E3A2A2 71.57%);",
@@ -211,16 +211,16 @@ export const Content: React.FC = () => {
                   WebkitTextFillColor: "transparent",
                 }} >risks</span>, not              
               </span>
-              <span className="text-white text-[46px] font-semibold font-['Satoshi Variable']">
+              <span className="text-white md:text-[46px] text-2xl font-semibold font-['Satoshi Variable']">
                 the other way round.
               </span>
             </div>
-            <div className="flex flex-row w-full justify-center items-center opacity-80 text-white text-[15px] font-medium font-['Satoshi Variable']">
+            <div className="flex flex-row w-full justify-center items-center text-center opacity-80 text-white text-[15px] font-medium font-['Satoshi Variable']">
               Get perpetuals-like trading experience, with advanced capabilities
             </div>
           </div>
           <div className="flex flex-col gap-y-7">
-            <div className="flex flex-row gap-x-7 justify-center items-start">
+            <div className="flex flex-col gap-y-7 md:flex-row gap-x-7 justify-center items-start">
               {RisksDetails.slice(0, 2).map((RisksDetails) => (
                 <div
                   key={RisksDetails.heading}
@@ -236,7 +236,7 @@ export const Content: React.FC = () => {
                 </div>
               ))}
             </div>
-            <div className="flex flex-row gap-x-7 justify-center items-start">
+            <div className="flex flex-col gap-y-7 md:flex-row gap-x-7 justify-center items-start">
               {RisksDetails.slice(2).map((RisksDetails) => (
                 <div
                   key={RisksDetails.heading}
