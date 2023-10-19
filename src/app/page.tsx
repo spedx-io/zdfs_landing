@@ -14,7 +14,7 @@ export default function Home() {
       >
         <Hero />
       </div>
-      <div className="flex flex-col absolute lg:top-[390px] md:top-[600px] sm:top-[600px] top-[700px]">
+      <div className="flex flex-col absolute lg:top-[390px] md:top-[600px] sm:top-[600px] top-[650px]">
         <Content />
         <hr className="max-w-[1200px] mx-auto my-[60px] opacity-30" />
 

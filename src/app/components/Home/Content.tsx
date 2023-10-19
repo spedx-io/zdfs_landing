@@ -86,13 +86,13 @@ export const Content: React.FC = () => {
       <div className="w-full flex flex-col gap-y-[70px]">
         <div>
           <div className="w-full flex flex-col gap-y-[70px] bg-[url('/images/backgrounds/ZDFs_bg.svg')] bg-no-repeat bg-top">
-            <div className="w-full h-24 flex-col justify-center items-center inline-flex ">
+            <div className="w-full h-24 flex-col justify-center items-center inline-flex gap-y-5">
               <div className="flex flex-row gap-x-4  ">
-                <span className="text-white md:text-[46px] text-2xl font-semibold font-['Satoshi Variable']">
+                <span className="text-white md:text-[46px] text-[30px] font-semibold font-['Satoshi Variable']">
                   Introducing
                 </span>
                 <span
-                  className="text-purple-300 md:text-[46px] text-2xl font-bold font-['Satoshi Variable']"
+                  className="text-purple-300 md:text-[46px] text-[30px] font-bold font-['Satoshi Variable']"
                   style={{
                     background:
                       "linear-gradient(180deg, #CFA8FF 50%, #091931 125.69%)",
@@ -147,7 +147,7 @@ export const Content: React.FC = () => {
           <div className="w-full h-[200px] flex-col justify-center items-center inline-flex bg-[url('/images/backgrounds/Candlesticks.svg')] bg-no-repeat bg-cente  gap-y-3">
             <div className="h-fit flex flex-row gap-x-2 items-center">
             <span
-                className=" md:text-[46px] text-2xl font-bold font-['Satoshi Variable']"
+                className=" md:text-[46px] text-[30px] font-bold font-['Satoshi Variable']"
                 style={{
                   background:
                     "linear-gradient(180deg, #CFA8FF 50%, #091931 125.69%)",
