@@ -83,7 +83,7 @@ export const Content: React.FC = () => {
           className="md:w-full md:h-full w-[60%] h-[60%]"
         />
       </div>
-      <div className="w-full flex flex-col gap-y-[50px]">
+      <div className="w-full flex flex-col gap-y-[70px]">
         <div>
           <div className="w-full flex flex-col gap-y-[70px] bg-[url('/images/backgrounds/ZDFs_bg.svg')] bg-no-repeat bg-top">
             <div className="w-full h-24 flex-col justify-center items-center inline-flex ">
@@ -92,7 +92,7 @@ export const Content: React.FC = () => {
                   Introducing
                 </span>
                 <span
-                  className="text-purple-300 text-[46px] font-bold font-['Satoshi Variable']"
+                  className="text-purple-300 md:text-[46px] text-2xl font-bold font-['Satoshi Variable']"
                   style={{
                     background:
                       "linear-gradient(180deg, #CFA8FF 50%, #091931 125.69%)",
@@ -143,11 +143,11 @@ export const Content: React.FC = () => {
             </div>
           </div>
         </div>
-        <div className="w-full flex flex-col gap-y-[-100px] justify-center items-center">
-          <div className="w-full h-[400px] flex-col justify-center items-center inline-flex bg-[url('/images/backgrounds/Candlesticks.svg')] bg-no-repeat bg-center">
-            <div className="flex flex-row gap-x-4">
-              <span
-                className="md:text-[46px] text-2xl font-bold font-['Satoshi Variable']"
+        <div className="w-full flex flex-col gap-y-[40px] justify-center items-center">
+          <div className="w-full h-[200px] flex-col justify-center items-center inline-flex bg-[url('/images/backgrounds/Candlesticks.svg')] bg-no-repeat bg-cente  gap-y-3">
+            <div className="h-fit flex flex-row gap-x-2 items-center">
+            <span
+                className=" md:text-[46px] text-2xl font-bold font-['Satoshi Variable']"
                 style={{
                   background:
                     "linear-gradient(180deg, #CFA8FF 50%, #091931 125.69%)",
@@ -155,13 +155,13 @@ export const Content: React.FC = () => {
                   WebkitTextFillColor: "transparent",
                 }}
               >
-                Perpetuals <span className="text-white">,</span>
+                Perpetuals 
               </span>
               <span className="text-white md:text-[46px] text-2xl text-center font-semibold font-['Satoshi Variable']">
-                on steroids.
+                , on steroids.
               </span>
             </div>
-            <div className="flex flex-row w-full justify-center items-center opacity-80 text-white text-[15px] font-medium font-['Satoshi Variable']">
+            <div className="flex flex-row w-full justify-center items-center text-center opacity-80 text-white text-[15px] font-medium font-['Satoshi Variable']">
               Get perpetuals-like trading experience, with advanced capabilities
             </div>
           </div>
@@ -200,16 +200,23 @@ export const Content: React.FC = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col gap-y-[70px] justify-center items-center bg-[url('/images/backgrounds/Risks_bg.svg')] bg-no-repeat bg-top">
-          <div className="w-full h-[300px] flex-col justify-center items-center inline-flex">
-            <div className="flex flex-col items-center gap-x-4">
+        <div className="flex flex-col  justify-center items-center bg-[url('/images/backgrounds/Risks_bg.svg')] bg-no-repeat bg-top">
+          <div className="w-full h-[200px] flex-col justify-center items-center inline-flex gap-y-4">
+            <div className="flex flex-col items-center gap-y-2 md:gap-y-[20px] lg:gap-y-[20px]">
               <span className="text-white md:text-[46px] text-2xl font-bold font-['Satoshi Variable']">
-                You manage your <span className="text-red-400"  style={{
-                  background:
-                    " linear-gradient(98deg, #FF5D5D 59.88%, #E3A2A2 71.57%);",
-                  WebkitBackgroundClip: "text",
-                  WebkitTextFillColor: "transparent",
-                }} >risks</span>, not              
+                You manage your{" "}
+                <span
+                  className="text-red-400"
+                  style={{
+                    background:
+                      " linear-gradient(98deg, #FF5D5D 59.88%, #E3A2A2 71.57%);",
+                    WebkitBackgroundClip: "text",
+                    WebkitTextFillColor: "transparent",
+                  }}
+                >
+                  risks
+                </span>
+                , not
               </span>
               <span className="text-white md:text-[46px] text-2xl font-semibold font-['Satoshi Variable']">
                 the other way round.
