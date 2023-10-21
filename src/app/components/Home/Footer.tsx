@@ -4,12 +4,12 @@ import Image from "next/image";
 
 export const Footer: React.FC = () => {
   return (
-    <footer className="flex flex-col items-center justify-center w-full">
-      <hr className="w-full mx-auto my-[60px] opacity-30 " />
+    <footer className="flex flex-col items-center justify-around w-full">
+      <hr className="w-full mx-auto mb-[60px] opacity-30 " />
 
-      <div className="max-w-[1200px] w-full flex md:flex-row flex-col items-center justify-around text-white pb-10">
-        <div id="about" className=" w-full">
-          <div className="w-full flex md:flex-col flex-row justify-around">
+      <div className="w-full flex lg:flex-row flex-col justify-between items-center text-white pb-10">
+        {/* <div id="about" className=" w-full"> */}
+          <div className="w-full flex lg:flex-col sm:flex-row justify-around lg:ml-[50px]">
             <div className="">
               <Image
                 src="/logo.svg"
@@ -18,11 +18,11 @@ export const Footer: React.FC = () => {
                 height={44}
                 className="md:w-[170px] md:h-[48px] w-[130px] h-[35px]"
               />{" "}
-              <p className="mt-5 mb-10 leading-149@%] md:text-[21px] text-[15px] ">
-                Trade your favorite Ethereum altcoins on Solana
+              <p className="flex flex-col mt-5 mb-10 md:text-[21px] text-[15px] ">
+                Trade your favorite Ethereum <span>altcoins on Solana</span>
               </p>
             </div>
-            <div className="flex md:flex-row flex-col gap-y-7 items-center gap-x-7">
+            <div className="flex lg:flex-row sm:flex-row flex-col gap-y-7 items-center gap-x-7">
               <div className="flex flex-row gap-x-6 items-center">
                 <Link href="/">
                   <Image
@@ -30,7 +30,7 @@ export const Footer: React.FC = () => {
                     width={23}
                     height={22}
                     alt="facebook"
-                    className="w-[23px] h-[23px] "
+                    className="sm:w-[23px] sm:h-[23px] w-[15px] h-[15px]"
                   />
                 </Link>
                 <Link href="/">
@@ -39,7 +39,7 @@ export const Footer: React.FC = () => {
                     width={23}
                     height={21}
                     alt="twitter"
-                    className="w-[23px] h-[23px] "
+                    className="sm:w-[23px] sm:h-[23px] w-[17px] h-[17px]"
                   />
                 </Link>
                 <Link href="/">
@@ -48,7 +48,7 @@ export const Footer: React.FC = () => {
                     width={21}
                     height={22}
                     alt="instagram"
-                    className="w-[23px] h-[23px] "
+                    className="sm:w-[23px] sm:h-[23px] w-[17px] h-[17px]"
                   />
                 </Link>
               </div>
@@ -59,7 +59,7 @@ export const Footer: React.FC = () => {
                     width={22}
                     height={22}
                     alt="linkedin"
-                    className="w-[23px] h-[23px] "
+                    className="sm:w-[23px] sm:h-[23px] w-[17px] h-[17px]"
                   />
                 </Link>
                 <Link href="/">
@@ -68,7 +68,7 @@ export const Footer: React.FC = () => {
                     width={32}
                     height={22}
                     alt="youtube"
-                    className="w-[23px] h-[23px] "
+                    className="sm:w-[23px] sm:h-[23px] w-[17px] h-[17px]"
                   />
                 </Link>
 
@@ -78,16 +78,16 @@ export const Footer: React.FC = () => {
                     width={22}
                     height={22}
                     alt="spotify"
-                    className="w-[23px] h-[23px] "
+                    className="sm:w-[23px] sm:h-[23px] w-[17px] h-[17px]"
                   />
                 </Link>
               </div>
             </div>
           </div>
-        </div>
+        {/* </div> */}
         <div
           id="links"
-          className="w-full justify-around flex flex-row  gap-x-5"
+          className="w-full justify-around flex flex-row "
         >
           <div className="gap-y-3 flex flex-col">
             <p className="md:text-2xl text-lg">Get Started</p>
@@ -121,16 +121,15 @@ export const Footer: React.FC = () => {
           </div>
           <div className="gap-y-3 flex flex-col">
             <p className="md:text-2xl text-lg">Resources</p>
-            <Link href="/" className="opacity-50  text-sm">
+            <Link href="/" className="opacity-50 md:text-sm text-xs">
               Blog
             </Link>
-            <Link href="/" className="opacity-50  text-sm">
+            <Link href="/" className="opacity-50 md:text-sm text-xs">
               Case Studies
             </Link>
-            <Link href="/" className="opacity-50  text-sm">
-              Product Adoption School
+            <Link href="/" className="opacity-50 md:text-sm text-xs">
+              Product Adoption 
             </Link>
-            <div />
           </div>
         </div>
       </div>
