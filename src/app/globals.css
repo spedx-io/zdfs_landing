@@ -18,4 +18,9 @@
 
 body {
   background-color: #011638;
+ 
+}
+html{
+  scroll-behavior: smooth;
+  scroll-padding-top: 50px;
 }

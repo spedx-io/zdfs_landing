@@ -19,19 +19,19 @@ export const Header: React.FC = () => {
           </Link>{" "}
           <div className="flex items-center gap-x-[54px] text-[19px] pl-5 leading-[25px]">
             <Link
-              href="/"
+              href="#zdfs"
               className="lg:flex hidden text-center text-white text-base font-normal"
             >
               ZDFs
             </Link>
             <Link
-              href="/"
+              href="#traders"
               className="lg:flex hidden text-center text-white text-base font-normal"
             >
               Traders
             </Link>
             <Link
-              href="/"
+              href="#marketMakers"
               className="lg:flex hidden text-center text-white text-base font-normal"
             >
               Market Makers

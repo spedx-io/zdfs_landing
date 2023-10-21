@@ -1,4 +1,4 @@
-import { Header } from "./Header";
+import  { Header }  from "./Header";
 export const Hero: React.FC = () => {
   return (
     <div className="bg-auto flex flex-col min-h-screen w-screen overflow-x-hidden relative">
