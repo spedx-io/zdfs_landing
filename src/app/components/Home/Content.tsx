@@ -84,7 +84,7 @@ export const Content: React.FC = () => {
         />
       </div>
       <div className="w-full flex flex-col gap-y-[70px]">
-        <div>
+        <div id="zdfs">
           <div className="w-full flex flex-col gap-y-[70px] bg-[url('/images/backgrounds/ZDFs_bg.svg')] bg-no-repeat bg-top">
             <div className="w-full h-24 flex-col justify-center items-center inline-flex gap-y-5">
               <div className="flex flex-row gap-x-4  ">
@@ -143,7 +143,7 @@ export const Content: React.FC = () => {
             </div>
           </div>
         </div>
-        <div className="w-full flex flex-col gap-y-[40px] justify-center items-center">
+        <div id="traders" className="w-full flex flex-col gap-y-[40px] justify-center items-center">
           <div className="w-full h-[200px] flex-col justify-center items-center inline-flex bg-[url('/images/backgrounds/Candlesticks.svg')] bg-no-repeat bg-cente  gap-y-3">
             <div className="h-fit flex flex-row gap-x-2 items-center">
             <span
@@ -200,7 +200,7 @@ export const Content: React.FC = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col  justify-center items-center bg-[url('/images/backgrounds/Risks_bg.svg')] bg-no-repeat bg-top">
+        <div id="marketMakers" className="flex flex-col  justify-center items-center bg-[url('/images/backgrounds/Risks_bg.svg')] bg-no-repeat bg-top">
           <div className="w-full h-[200px] flex-col justify-center items-center inline-flex gap-y-4">
             <div className="flex flex-col items-center gap-y-2 md:gap-y-[20px] lg:gap-y-[20px]">
               <span className="text-white md:text-[46px] text-2xl font-bold font-['Satoshi Variable']">
